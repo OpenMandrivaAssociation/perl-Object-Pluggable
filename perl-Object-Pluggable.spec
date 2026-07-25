@@ -2,14 +2,14 @@
 %define upstream_version 1.29
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	6
 
 Summary:	Importable constants for Object::Pluggable
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Object/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://github.com/hinrik/object-pluggable
+Source0:	https://cpan.metacpan.org/authors/id/H/HI/HINRIK/Object-Pluggable-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
