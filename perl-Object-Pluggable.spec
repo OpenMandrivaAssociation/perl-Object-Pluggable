@@ -3,13 +3,13 @@
 
 Name:		perl-%{upstream_name}
 Version:	%{upstream_version}
-Release:	6
+Release:	1
 
 Summary:	Importable constants for Object::Pluggable
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/hinrik/object-pluggable
-Source0:	https://cpan.metacpan.org/authors/id/H/HI/HINRIK/Object-Pluggable-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/H/HI/HINRIK/Object-Pluggable-1.29.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -47,13 +47,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc README Changes LICENSE META.yml META.json
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
-
-%changelog
-* Sat Apr 23 2011 Funda Wang <fwang@mandriva.org> 1.290.0-2mdv2011.0
-+ Revision: 656949
-- rebuild for updated spec-helper
-
-* Fri Nov 12 2010 Jérôme Quelin <jquelin@mandriva.org> 1.290.0-1mdv2011.0
-+ Revision: 596635
-- import perl-Object-Pluggable
 
