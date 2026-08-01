@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	1.29
-Release:	3
+Release:	4
 
 Summary:	Importable constants for Object::Pluggable
 License:	GPL+ or Artistic
@@ -40,6 +40,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 %check
 # soft: do not fail package on test failures
 set +e
+make test || :
 %make test || :
 
 %install
